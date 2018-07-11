@@ -1,0 +1,66 @@
+.game {
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+}
+
+.score {
+  font-size: 30px;
+}
+
+.board {
+  margin: auto;
+  background: #222;
+  overflow: hidden;
+}
+
+.controls {
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -25px;
+  position: absolute;
+}
+
+.controls button {
+  background: #eee;
+  box-shadow: 0px 0px 10px #000;
+  font-size: 20px;
+  opacity: 0.75;
+  padding: 15px;
+  width: 200px;
+}
+
+.controls button:hover {
+  opacity: 1;
+}
+
+.body-cell, .food-cell, .empty-cell {
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+}
+
+.body-cell, .empty-cell {
+  height: 30px;
+  width: 30px;
+}
+
+.body-cell {
+  background: #0b3;
+  box-shadow: 0px 0px 5px #0b3;
+}
+
+.food-cell {
+  background: #39c;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #39c;
+  height: 24px;
+  margin: 3px;
+  width: 24px;
+}
+
+.game-over .body-cell {
+  background: #d04;
+  box-shadow: 0px 0px 5px #d04;
+}
